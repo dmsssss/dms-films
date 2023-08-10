@@ -1,0 +1,128 @@
+@viewport {
+  zoom: 1.0;
+  user-zoom: fixed;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+#main-content {
+  /* Sesuaikan dengan ukuran konten utama Anda */
+  min-height: calc(100vh - 100px);
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #c0bcbc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Ukuran font responsif */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Mengatur tata letak untuk perangkat seluler */
+@media (max-width: 600px) {
+
+  /* Misalnya, gunakan tata letak satu kolom untuk layar seluler */
+  .container {
+    display: block;
+  }
+
+  /* Atur lebar gambar untuk responsif */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  /* background-color: wheat; */
+  background-color: rgb(61, 59, 59);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 20px;
+}
+
+.Movie-wrapper {
+  width: 500px;
+  background-color: tan;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-size: 40px;
+  max-width: 30em;
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  width: 475px;
+  border-radius: 25px;
+  max-width: 300px;
+}
+
+.Movie-title {
+  height: 60px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+}
+
+.Movie-image {
+  height: 640px;
+}
+
+.Movie-date {
+  font-style: italic;
+  font-weight: bold;
+  color: black
+}
+
+.Movie-rate {
+  color: red;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+.teks {
+  color: white;
+  font-weight: bold;
+}
